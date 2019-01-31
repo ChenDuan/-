@@ -152,6 +152,7 @@ export default {
     },
     register() {
       this.$refs['ruleForm'].validate((valid) => {
+        
         if(valid) {
           this.$axios.post('/users/signup',{
             username: encodeURIComponent(this.ruleForm.name),
