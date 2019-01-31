@@ -152,7 +152,6 @@ export default {
     },
     register() {
       this.$refs['ruleForm'].validate((valid) => {
-        
         if(valid) {
           this.$axios.post('/users/signup',{
             username: encodeURIComponent(this.ruleForm.name),
@@ -160,6 +159,7 @@ export default {
             email: this.ruleForm.email,
             code: this.ruleForm.code
           }).then(({status,data})=>{
+            
             if(status===200) {
               if(data&&data.code===0) {
                 location.href = '/login'
