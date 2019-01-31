@@ -159,7 +159,6 @@ export default {
             email: this.ruleForm.email,
             code: this.ruleForm.code
           }).then(({status,data})=>{
-            
             if(status===200) {
               if(data&&data.code===0) {
                 location.href = '/login'
