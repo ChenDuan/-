@@ -1,0 +1,39 @@
+E:\dbs>mongoimport -d student -c areas areas.dat
+2019-01-31T20:19:26.063+0800    connected to: localhost
+2019-01-31T20:19:26.224+0800    imported 344 documents
+
+E:\dbs>mongoimport -d student -c category category.dat
+2019-01-31T20:20:56.413+0800    connected to: localhost
+2019-01-31T20:20:56.716+0800    imported 20 documents
+
+E:\dbs>mongoimport -d student -c cities cities.dat
+2019-01-31T20:21:34.396+0800    connected to: localhost
+2019-01-31T20:21:34.493+0800    imported 20 documents
+
+E:\dbs>mongoimport -d student -c menus menus.dat
+2019-01-31T20:22:17.258+0800    connected to: localhost
+2019-01-31T20:22:17.351+0800    imported 1 document
+
+E:\dbs>mongoimport -d student -c provinces provinces.dat
+2019-01-31T20:23:33.482+0800    connected to: localhost
+2019-01-31T20:23:33.575+0800    imported 20 documents
+
+E:\dbs>mongoimport -d student -c topsearches topsearches.dat
+2019-01-31T20:24:10.787+0800    connected to: localhost
+2019-01-31T20:24:10.882+0800    imported 2 documents
+
+E:\dbs>mongoimport -d student -c maps maps.dat
+2019-01-31T20:25:15.930+0800    connected to: localhost
+2019-01-31T20:25:16.023+0800    imported 35 documents
+
+E:\dbs>mongoimport -d student -c pois pois.dat
+2019-01-31T20:25:46.523+0800    connected to: localhost
+2019-01-31T20:25:46.617+0800    imported 10 documents
+
+E:\dbs>mongoimport -d student -c regions regions.dat
+2019-01-31T20:26:23.243+0800    connected to: localhost
+2019-01-31T20:26:23.338+0800    imported 20 documents
+
+E:\dbs>mongoimport -d student -c category category.dat
+2019-01-31T20:28:46.036+0800    connected to: localhost
+2019-01-31T20:28:46.141+0800    imported 20 documents

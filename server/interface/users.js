@@ -6,9 +6,6 @@ import Passport from "./utils/passport";
 import Email from "../dbs/config";
 import axios from "./utils/axios";
 
-
-
-
 let router = new Router({
   prefix: "/users"
 });
