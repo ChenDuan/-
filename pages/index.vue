@@ -18,6 +18,7 @@ export default {
 }
 </script>
 <style lang="scss">
+
 @import "@/assets/css/index/index.scss";
 
 </style>
