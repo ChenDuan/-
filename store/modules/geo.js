@@ -1,6 +1,6 @@
 const state = () => ({
   position: {
-    city: '广州'
+    city: '三亚市'
   }
 })
 
