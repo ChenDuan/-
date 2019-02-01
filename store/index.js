@@ -7,17 +7,17 @@ const store = () => new Vuex.Store({
   modules: {
     geo
   },
-  actions: {
-    async nuxtServerInit({
-      commit
-    }, {
-      req,
-      app
-    }) {
-      const {status,data:{province,city}} = await app.$axios.get('/geo/getPosition')
-      commit('geo/setPosition',status===200?{city,province}:{city:'',province:''})
-    }
-  }
+  // actions: {
+  //   async nuxtServerInit({
+  //     commit
+  //   }, {
+  //     req,
+  //     app
+  //   }) {
+  //     const {status,data:{province,city}} = await app.$axios.get('/geo/getPosition')
+  //     commit('geo/setPosition',status===200?{city,province}:{city:'',province:''})
+  //   }
+  // }
 })
 
 export default store
