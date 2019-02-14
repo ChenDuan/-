@@ -6,14 +6,20 @@
       </el-col>
       <el-col :span="19">2</el-col>
     </el-row>
-    <el-row :span="24">3</el-row>
+    <el-row>
+      <el-col :span="24">
+        <artistic/>
+      </el-col>
+    </el-row>
   </div>
 </template>
 <script>
 import Emenu from '../components/index/menu'
+import Artistic from '../components/index/artistic'
 export default {
   components: {
-    Emenu
+    Emenu,
+    Artistic
   }
 }
 </script>

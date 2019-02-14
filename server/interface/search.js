@@ -57,12 +57,25 @@ router.get('/hotPlace', async(ctx) => {
       })
     }
 
-
   } catch (error) {
     ctx.body = {
       code: -1,
       result: []
     }
+  }
+})
+
+router.get('/resultsByKeywords',async (ctx) => {
+  const {city, keyword} = ctx.query;
+  let {status, data:{count,pois}} = await axios.get(`http://cp-tools.cn/search/resultsByKeywords`,{
+    params: {
+      city,
+      keywords
+    }
+  })
+  ctx.body = {
+    count: status === 200?count:0,
+    pois: status === 200?pois:[]
   }
 })
 
