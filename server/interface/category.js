@@ -1,5 +1,4 @@
 import Router from "koa-router";
-import axios from "./utils/axios";
 import Categroy from '../dbs/models/category'
 
 let router = new Router({prefix:'/category'})
