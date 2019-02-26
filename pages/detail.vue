@@ -46,9 +46,36 @@ export default {
       return this.list.filter(item => item.photo.length).length
     }
   },
+  async asyncData(ctx) {
+    let {keyword,type} = ctx.query;
+    let {status,data:{product,more:list,login}} = await ctx.$axios.get('/search/products',{
+      params: {
+        keyword,
+        type,
+        city: ctx.store.state.geo.position.city
+      }
+    })
+    if(status===200) {
+      return {
+        keyword,
+        product,
+        type,
+        list,
+        login
+      }
+    } else {
+      return {
+        keyword,
+        product:{},
+        type,
+        list:[],
+        login:false
+      }
+    }
+  }
 }
 </script>
 
-<style>
-
+<style lang="scss">
+  @import "@/assets/css/detail/index.scss"
 </style>
